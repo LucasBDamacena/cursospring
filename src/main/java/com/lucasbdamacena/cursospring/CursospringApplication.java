@@ -61,6 +61,14 @@ public class CursospringApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Categoria c1 = new Categoria(null, "Informática");
 		Categoria c2 = new Categoria(null, "Escritório");
+		Categoria c3 = new Categoria(null, "3----");
+		Categoria c4 = new Categoria(null, "4-----");
+		Categoria c5 = new Categoria(null, "5-----");
+		Categoria c6 = new Categoria(null, "6----");
+		Categoria c7 = new Categoria(null, "7---");
+		
+		
+		
 		
 		Produto p1 = new Produto(null, "Computador", 2000);
 		Produto p2 = new Produto(null, "Impressora", 800);	
@@ -73,7 +81,7 @@ public class CursospringApplication implements CommandLineRunner {
 		p2.setCategorias(Arrays.asList(c1,c2));
 		p3.setCategorias(Arrays.asList(c1));
 					
-		categoriaRepository.saveAll(Arrays.asList(c1,c2));
+		categoriaRepository.saveAll(Arrays.asList(c1,c2,c3,c4,c5,c6,c7));
 		produtoRepository.saveAll(Arrays.asList(p1,p2,p3));
 		
 		
