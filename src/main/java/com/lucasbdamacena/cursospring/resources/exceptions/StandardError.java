@@ -7,8 +7,8 @@ public class StandardError implements Serializable{
 	
 	private Integer code;
 	private String msg;
-	private long timeStamp;
 	
+	private long timeStamp;
 	
 	public StandardError(Integer code, String msg, long timeStamp) {
 		super();
@@ -17,31 +17,25 @@ public class StandardError implements Serializable{
 		this.timeStamp = timeStamp;
 	}
 
-
 	public Integer getCode() {
 		return code;
 	}
-
 
 	public void setCode(Integer code) {
 		this.code = code;
 	}
 
-
 	public String getMsg() {
 		return msg;
 	}
-
 
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
 
-
 	public long getTimeStamp() {
 		return timeStamp;
 	}
-
 
 	public void setTimeStamp(long timeStamp) {
 		this.timeStamp = timeStamp;
